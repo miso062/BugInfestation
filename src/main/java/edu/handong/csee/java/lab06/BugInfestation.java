@@ -94,10 +94,6 @@ public class BugInfestation {
 			// One loop statement means passing one week, so finishing point the loop statement add one to countWeek
 			countWeeks = countWeeks+1;
 			
-			// Shows the decimal point of the double variable totalBugVolume up to the zero point.
-			totalBugVolume = Double.parseDouble(String.format( "%.0f" , totalBugVolume));
-			// Shows the decimal point of the double variable population up to the zero point.
-			population = Double.parseDouble(String.format("%.0f", population));
 		}
 
 
@@ -105,8 +101,8 @@ public class BugInfestation {
 		System.out.println("\nStarting with a roach population of " + startPopulation);
 		System.out.println("and a house with a volume of "+ houseVolume + " cubic feet,");
 		System.out.println("after " + countWeeks + " weeks,");
-		System.out.println("the house will be filled with "+ population + " roaches.");
-		System.out.println("They will fill a volume of "+ totalBugVolume + " cubic feet.");
+		System.out.println("the house will be filled with "+ (int)population + " roaches.");
+		System.out.println("They will fill a volume of "+ (int)totalBugVolume + " cubic feet.");
 		System.out.println("Better call Debugging Experts Inc.");
 		
 	}
